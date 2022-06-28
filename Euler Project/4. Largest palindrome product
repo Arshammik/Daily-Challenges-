@@ -1,0 +1,23 @@
+#!/use/bin/python
+
+# Euler Chalenge
+
+# Problem Number 4
+
+
+# Checking if the Nimber is palindromic or not
+
+def Is_palindrom (i):
+    return str(i) == str (i)[::-1]
+
+Max_palindrme = 0
+
+for i in range(100,999):
+    for j in range(i+1 ,1000):
+
+        P = i * j
+
+        if Is_palindrom(P) and P > Max_palindrme:
+            Max_palindrme =  P
+
+print(Max_palindrme)
