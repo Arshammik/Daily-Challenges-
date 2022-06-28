@@ -1,3 +1,9 @@
+#!/use/bin/python
+
+# Euler Project Chalenge
+
+# Problem Number 1
+
 sum = 0
 
 for a in range(334):
