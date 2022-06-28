@@ -1,0 +1,32 @@
+#!/use/bin/python
+
+# Oyler Chalenge
+
+# Problem Number 2
+
+
+N1 = 1
+N2 = 2
+
+
+def Is_Even(n):
+
+    if n % 2 == 0 :
+        return True
+    else:
+        return False
+
+
+sum = 2
+
+while (N1 < 4 * 10 ** 6):
+    print (N1)
+    Action = N1 + N2
+    N1 = N2
+    N2 = Action
+    if Is_Even(Action):
+        sum = sum + Action
+
+print (sum)
+        
+    
