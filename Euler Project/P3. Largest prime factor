@@ -1,0 +1,38 @@
+#!/use/bin/python
+# Oyler Chalenge
+# Problem Number 3
+
+# getting factors as number
+
+import math
+
+def Getfactor (n):
+    Factors = []
+    for i in range(1,int(math.sqrt(n)+1)):
+        if n % i == 0 :
+            Factors.append(i)
+            Factors.append(n // i)
+    return Factors
+
+
+
+# determinng that it's prime or not
+
+def IsPrime (m):
+    if len (Getfactor(m)) == 2:
+        return True
+    else:
+        return False
+
+
+
+#find the highest prime number
+
+All_factors = Getfactor(600851475143)
+largestprimefactor = 0
+
+for Z in All_factors:
+    if IsPrime(Z) and Z > largestprimefactor:
+        largestprimefactor = Z
+
+print(largestprimefactor)
