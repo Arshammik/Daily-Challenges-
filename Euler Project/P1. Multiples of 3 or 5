@@ -1,0 +1,18 @@
+sum = 0
+
+for a in range(334):
+    three = a * 3
+    sum = sum + three
+    
+
+for b in range(200):
+    five = b * 5
+    sum = sum + five
+    
+
+for c in range(67):
+    fifteen = c * 15
+    sum = sum - fifteen
+    
+
+print(sum)
