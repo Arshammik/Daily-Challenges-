@@ -114,3 +114,26 @@ LargMatrix = [
 sum_num = str(sum(LargMatrix))
 
 print(sum_num[0:10])
+
+
+###################################################
+#####################  HOWEVER ####################
+###################################################
+
+
+# Initialy i thought that we should add first 10 disigt of each number and sum them together which be like 
+
+
+sum = 0
+
+for i in range (0,99):
+    a = LargMatrix[i]
+    b = str(a)
+    c = b[0:10]
+    print(c)
+    d = int(c)
+    sum = sum + d
+
+print(sum)
+    
+
