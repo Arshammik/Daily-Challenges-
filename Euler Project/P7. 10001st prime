@@ -1,0 +1,28 @@
+#!/use/bin/python
+
+# Euler Chalenge
+
+# Problem Number 7
+
+import math
+
+def Getfactor (n):
+    factor = []
+    for i in range(1,int(math.sqrt(n)+1)):
+        if n % i == 0 :
+            factor.append(i)
+            factor.append(n // i)
+    return factor
+
+Primes = []
+
+def IsPrime(n):
+    if len(Getfactor(n)) == 2:
+        Primes.append(n)
+
+
+for i in range (1,200000):
+    IsPrime(i)
+
+print(Primes[10001])
+print(len(Primes))
