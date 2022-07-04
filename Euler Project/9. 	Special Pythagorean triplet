@@ -1,0 +1,30 @@
+#!/use/bin/python
+
+# Euler Chalenge
+
+# Problem Number 9
+
+K = 1000
+
+
+for a in range (1 , K + 1):
+    for b in range (1 , K + 1):
+        if a > b:
+            continue
+
+        
+        if a + b + (a**2 + b**2) **0.5 == K :   # (a**2 + b**2) **0.5 represent the c amount
+            print(
+
+                'a :' + str(a) + \
+
+                'b :' + str(b) + \
+
+                'c :' + str(int((a**2 + b**2) **0.5))
+             )
+
+            print (a*b*int((a**2 + b**2) **0.5))
+
+
+# Try to use "(a**2 + b**2) **0.5" as c in code without crazy looping
+TODO Answer 
