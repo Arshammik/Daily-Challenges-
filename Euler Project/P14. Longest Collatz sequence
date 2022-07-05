@@ -1,0 +1,51 @@
+#!/use/bin/python
+
+# Euler Chalenge
+
+# Problem Number 14
+# Longest Collatz sequence
+
+#The following iterative sequence is defined for the set of positive integers:
+
+#n → n/2 (n is even)
+#n → 3n + 1 (n is odd)
+
+#Using the rule above and starting with 13, we generate the following sequence:
+
+#13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+
+# just the algorithen the peoblem explained 
+
+def Chain_maker (i):
+    list_of_Chain = []
+    list_of_Chain.append(i)
+    while (i != 1):
+        
+        if i % 2 == 0 :
+            a = i/2
+            list_of_Chain.append(int(a))
+            i = a
+        elif i % 2 != 0 and i != 1 :
+            b = (3*i) + 1
+            list_of_Chain.append(int(b))
+            i = b
+    return list_of_Chain
+
+# Now we find the starting number, under one million, which produces the longest chain.
+
+lenght = 0
+number = 0
+
+for j in range (1, 10 ** 6):   
+
+    k = len(Chain_maker(j))
+    if k > lenght:
+        lenght = k
+        number = j
+
+print (lenght)
+print (number)
+
+
+#TODO staering position: 837799
+#TODO  greatest length: 525
