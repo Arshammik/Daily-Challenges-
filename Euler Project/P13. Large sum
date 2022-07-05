@@ -136,4 +136,6 @@ for i in range (0,99):
 
 print(sum)
     
+    
+# try to use pandas or numpy for better function
 
