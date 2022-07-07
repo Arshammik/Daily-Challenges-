@@ -3,3 +3,15 @@
 # Euler Project Challenge No. 16
 # Power digit sum
 
+def sum_digit_two_in_power(n):
+    a = 2 ** n
+    a = str(a)
+    s = 0
+    for i in range (0, len(a)):
+        b =  int(a[i])
+        s = b + s
+    return s
+
+
+print(sum_digit_two_in_power(1000))
+
