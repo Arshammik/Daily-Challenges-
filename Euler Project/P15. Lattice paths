@@ -3,3 +3,5 @@
 # We can imagin the moves as Binary code, one as right move and zero as down move
 # for instance the first 2*2 grids are 1100, 1010, 1001 and so on
 
+# the whole point of this challenge is to converting the programming challenges into mathematical challenges
+# this will increase functionality and efficiency of code in a next level
