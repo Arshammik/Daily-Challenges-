@@ -1,5 +1,9 @@
 #!/use/bin/python
 
+# Euler Chalenge
+
+# Problem Number 15
+# Lattice paths
 
 # We can imagin the moves as Binary code, one as right move and zero as down move
 # for instance the first 2*2 grids are 1100, 1010, 1001 and so on
