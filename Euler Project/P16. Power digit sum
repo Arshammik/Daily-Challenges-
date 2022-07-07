@@ -15,3 +15,4 @@ def sum_digit_two_in_power(n):
 
 print(sum_digit_two_in_power(1000))
 
+#TODO: 1366
