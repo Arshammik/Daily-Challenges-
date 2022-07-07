@@ -5,3 +5,14 @@
 
 # the whole point of this challenge is to converting the programming challenges into mathematical challenges
 # this will increase functionality and efficiency of code in a next level
+
+
+import math
+
+def find_path (Gridsize):
+    A = math.factorial(Gridsize * 2) / (math.factorial (Gridsize) ** 2)
+    return A
+
+
+
+print(int(find_path(20)))
