@@ -13,5 +13,5 @@ As of 27 April 2021, Project Euler has more than 1,000,000 users who have solved
 
 ### In this repository we aim to solve AMAP problems in python3.
 
-#### If you like feel free to leave a :+3:
+#### If you like feel free to leave a :star:
 #### ^-^
