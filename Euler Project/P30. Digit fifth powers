@@ -18,3 +18,22 @@ The sum of these numbers is 1634 + 8208 + 9474 = 19316.
 Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.
 
 '''
+amazing_numbers = []
+awnser = 0
+
+for i in range(1000,1000000):
+    a = str(i)
+    sum = 0
+    for j in range(0,len(a)):
+        b = a[j]
+        c = int(b) ** 5
+        sum = c + sum
+    if i == sum:
+        amazing_numbers.append(i)
+        awnser = i + awnser
+
+print ((amazing_numbers))
+print ((awnser))
+
+
+TODO 443839
