@@ -3,3 +3,14 @@
 # Euler Chalenge
 # Self powers
 
+def self_power (n):
+    awnser = 0
+    for i in range (1, n+1):
+        awnser=  (i ** i) + awnser
+    return awnser
+
+
+
+b = self_power(1000)
+print (str(b)[2991:3001])
+
