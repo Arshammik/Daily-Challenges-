@@ -14,5 +14,21 @@ Find the sum of all numbers, less than one million, which are palindromic in bas
 
 # We managed to use bin() function for making binary, maybe come back later and make the algorithem for my own
 
+def binary_pallindrom (n):
+    a = bin(n)
+    b = a[2:len(a)]
+    return b
 
+
+awnser = 0
+
+for i in range (1,10**6):
+    b = binary_pallindrom(i)
+    if str(b) == str (b)[::-1] and str (i) == str (i)[::-1]:
+        awnser = awnser + i
+
+
+print(awnser)
+
+TODO 872187
 
