@@ -14,3 +14,5 @@ def self_power (n):
 b = self_power(1000)
 print (str(b)[2991:3001])
 
+TODO 9110846700
+# NOT RUN
