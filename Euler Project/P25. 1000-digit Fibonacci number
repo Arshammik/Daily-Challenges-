@@ -1,0 +1,25 @@
+#!/use/bin/python
+
+# Euler Chalenge
+# Peoblem Number 25
+
+# 1000-digit Fibonacci number
+
+# Just like before BUT don't forget to add an index int to it :)
+
+first = 1
+second  = 1
+index = 1
+
+while (True):
+    index += 1
+    third = second + first
+    first = second
+    second = third
+    digit = str(first)
+    if len(digit) == 1000:
+        print(index)
+        break
+
+TODO 4782
+    
