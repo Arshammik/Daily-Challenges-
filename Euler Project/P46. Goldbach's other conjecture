@@ -5,6 +5,9 @@
 
 # Goldbach's other conjecture
 
+
+# It is not completed yet!
+
 def is_prime(n):
     if n == 1:
         return False
