@@ -9,3 +9,17 @@ If the numbers 1 to 5 are written out in words: one, two, three, four, five, the
 If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?
 
 '''
+
+# It is redculess not to use a library for that
+# Hence, we managed to use num2words
+
+rom num2words import *
+
+def number_letter_counts(n):
+    lenght = 0
+    for i in range(1, n+1):
+        lenght += len(num2words(i).replace(" ","").replace("-",""))
+    return total_length
+
+awnser = number_letter_counts(1000)
+print(awnser)
