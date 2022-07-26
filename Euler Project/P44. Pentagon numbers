@@ -1,0 +1,13 @@
+#!use/pin/ptyhon
+
+
+Pentagon_numbers = []
+for i in range (1 * 10 ** 6):
+    a = i * ( 3*i - 1) / 2
+    Pentagon_numbers.append(a)
+
+
+for item in Pentagon_numbers:
+    print(item)
+
+print(len(Pentagon_numbers))
