@@ -31,14 +31,12 @@ def Distinct_powers (n,m):
             A = i ** j
             #print (i,"in power of",j,"is",A) #for debugging
             terms.append(A)
-    new = list(dict.fromkeys(terms))
+    new = list(dict.fromkeys(terms)) # We Used "dict.fromkey()" for deletion duplication in our list 
     return new
 
 
 
 print(len(Distinct_powers(2,100)))
-
-
 
 
 TODO 9183
